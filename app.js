@@ -6,9 +6,6 @@ const generate = require("./generate");
 const fs = require("fs");
 const open = require("open");
 
-
-
-
 //starting the header and footer elements to the HTML
 const startProfile = [generate.header(), generate.footer()];
 
@@ -37,8 +34,6 @@ function manager(){
     }
   ])
 }
-
-
 
 //after inputting a manager, now select engineer or intern
 function employees(){
@@ -118,7 +113,6 @@ function employees(){
   });
 }
 
-
 //write the file after team variables are inputted
 function printHTML(startProfile){
   fs.writeFile("./output/teamProfile.html", startProfile, (err) => {
@@ -129,7 +123,6 @@ function printHTML(startProfile){
   open("./output/teamProfile.html");
   };
 
-
 // starts entire app
 manager()
 
@@ -139,9 +132,3 @@ manager()
   startProfile.splice(startProfile.length-1,0,manager.getHTML());
   employees();
 });
-
-
-
-
-
-
