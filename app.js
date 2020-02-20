@@ -70,7 +70,7 @@ function employees(){
         }
         //after questions are answered take inputs and plug into html card for engineer
       ]).then((answers)=>{
-        let engineer = new Engineer(answers.name, answers.id, answers.email,answers.github);
+        let engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
         startProfile.splice(startProfile.length-1, 0, engineer.getHTML());
         employees();
       })
@@ -101,8 +101,8 @@ function employees(){
         }
         //after questions are answered take inputs and plug into html card for intern
       ]).then((answers)=>{
-        let intern = new Intern(answers.name, answers.id, answers.email,answers.school);
-        startProfile.splice(startProfile.length-1, 0, intern.getHTML());
+        let intern = new Intern(answers.name, answers.id, answers.email, answers.school);
+        startProfile.splice(startProfile.length-1, 0, intern.getHTML()); 
         employees();
       })
     }
@@ -128,7 +128,7 @@ manager()
 
 //managers info
 .then((answers)=>{
-  const manager = new Manager(answers.name, answers.id, answers.email,answers.officeNumber);
-  startProfile.splice(startProfile.length-1,0,manager.getHTML());
+  const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
+  startProfile.splice(startProfile.length-1, 0, manager.getHTML());
   employees();
 });
