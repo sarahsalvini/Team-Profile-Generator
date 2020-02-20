@@ -41,11 +41,10 @@ ul {
       
 </style>
 </head>
-
 <body>
     
 <div class="jumbotron jumbotron-fluid bg-info text-white">
-      <h1 class="display-4 text-center">My Team</h1>
+      <h1 class="display-4 text-center">Team Profile</h1>
       <h1 class="display-4 text-center"></h1>
   </div>`
   
@@ -107,6 +106,7 @@ const internCard = function(data) {
             </div>
       </div>`
 };
+
 const endCard = function() {
   return `</div>
     </div>
