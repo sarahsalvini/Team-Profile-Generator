@@ -18,3 +18,4 @@ We were assigned to create a software engineering team generator command line ap
 ![Testing Application](./test.gif)
 
 ## Deployed app:
+https://sarahsalvini.github.io/Team-Profile-Generator/
